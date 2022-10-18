@@ -1,0 +1,379 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: roboto; 
+}
+
+.ohfood-cont{
+    display:flex;
+    justify-content:center;
+    padding: 0 70px;
+}
+.icon-logo{
+    display: flex;
+    justify-content: flex-start;
+    width:150px;
+    margin: 10px 0;
+}
+.paris-cont{
+    display:flex;
+    justify-content: center;
+    background-color: lightgrey;
+    padding: 0 70px;
+}
+.fa-location-dot{
+    margin-right: 20px;
+    margin-top: 18px;
+}
+.book-text{
+    text-align:center;
+    margin: 0px 30px;
+    padding: 30px 10px;
+}
+.discover-text{
+    text-align:center;
+    margin:0px  30px;
+}
+.pick{
+    text-align: left;
+    display: block;
+    margin-left:50px;
+}
+.explore-button{
+    cursor: pointer;
+    position: absolute;
+    top:40%;
+    left:20%;
+    border-radius: 30px;
+    padding:0 20px;
+    height:40px;
+    background-color: #ee6bc9;
+    color:white;
+    background: linear-gradient(-0.05deg,#9356DC,#FF79Da);
+    transition: opacity 5s linear;
+}
+.explore-button-cont{
+    position: relative;
+    height:130px;
+    padding: 0px;
+}
+.explore-button:hover{
+    background-color:#e699d0;
+    box-shadow: 2px 5px 10px 5px rgba(117, 59, 168, 0.753);
+    opacity: 0.25;
+}
+.sect{
+    background-color:whitesmoke;
+}
+.one{
+    display: inline-block;
+    border:2px solid #9356DC;
+    border-radius: 50%;
+    background-color: #9356DC;
+    color:white;
+    width:15px;
+    position:absolute;
+    left:-15px;
+    top:-5px;
+}
+.button-style{
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border:2px solid whitesmoke;
+    margin-left: 30px;
+    box-shadow: 1px 0px 10px -3px rgb(205, 194, 194);
+    background-color: whitesmoke ;
+    padding:10px 80px 20px 20px;
+    height:35px;
+    position: relative;
+}
+.button-style2{
+    background-color:#f1e9f9;
+    border:2px solid #f1e9f9;
+    margin-bottom: 20px;
+}
+.icon-class{
+    color:gray;
+    margin: 0 8px;
+}
+.fa-home{
+    color:#9356DC;
+}
+.works-text-container{
+    margin-left:  20px;
+}
+section{
+    background-color: whitesmoke;
+    padding-bottom: 30px;
+}
+.full-pallete-img{
+    width:280px;
+    height: 163px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.full-palette-cont{
+    display: flex;
+    justify-content:flex-start;
+}
+.full-palette-wrapper{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 225px;
+    margin-bottom:20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    position:relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color:black;
+}
+.fa-heart{
+    margin:8px 8px 5px;
+    color:black;
+    background-color: white;
+}
+.fa-hand-pointer{
+    position: absolute;
+    right: 10px;
+    padding: 20px 10px 0 0 ;
+}
+.heart-icon{
+    position: relative;
+    margin-left: 100px;
+    margin-top: 10px;
+    color:#9356DC;
+}
+.full-palette-text-wrap{
+    display: flex;
+    justify-content:space-between;
+}
+.full-palette-text{
+    margin-left: 8px;
+}
+.the-full{
+    margin: 0;
+    
+}
+.new{
+    margin: 3px 0 15px;
+    
+}
+.restaurant{
+    padding-top: 30px;
+    margin: 50px 80px 10px 25px ;
+    background-color: whitesmoke;
+}
+.new-icon{
+    display: inline-block;
+    position: absolute;
+    right:20px;
+    top:0x;
+    border:2px solid #99E2D0;
+    color:green;
+    background-color: #99E2D0;
+    padding:1px 8px
+}
+.cutlery{
+    display:flex; 
+
+}
+.cutlery-text, .partner-text{
+    margin:0 0 0 10px;
+}
+.partner{
+    display: flex;
+    padding:10px 0;
+}
+footer{
+    padding: 20px;
+    background-color: rgb(57, 57, 57);
+    color: white;
+}
+.legal{
+    margin: 0;
+    padding-top: 0px;
+}
+.contact{
+    margin-top: 10px;
+}
+a:link{
+    text-decoration: none;
+    color:black;
+}
+.contact{
+    color:white !important;
+}
+.loader{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    transition: opacity 3s, visibility 3s;
+}
+.loader-hidden{
+    opacity:0;
+    visibility: hidden;
+}
+.loader::after{
+    content: "";
+    width:75px;
+    height: 75px;
+    border:15px solid red;
+    border-top-color: green;
+    border-radius: 50%;
+    animation: loading 3s ease infinite;
+}
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@media only screen and (min-width:760px)and (max-width:960px){
+    .ohfood-cont{
+        display:flex;
+        justify-content:center;
+        padding: 0 70px;
+    }
+    .icon-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .paris-cont{
+        display: flex;
+        justify-content: center;
+        background-color: lightgrey;
+    }
+    .book-text{
+        text-align:center;
+        /*margin: 0px 30px;
+        padding: 30px 10px;*/
+    }
+    .pick{
+        display: inline;
+        margin-left: 5px;
+    }
+    .sect{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .explore-button-cont{
+        position: relative;
+        display:flex;
+        justify-content: flex-start;
+        align-self:flex-start;
+        margin-left: 300px;
+    }
+    .explore-button{
+        position: absolute;
+        left:0px;
+        width:150px;
+    }
+    .button-div{
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+    .button-style2{
+        margin-top: 30px;
+    }
+    .button-style1{
+        margin-right: 40px;
+    }
+    .restaurant-cont{
+        display: flex;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+    
+    @media only screen and (min-width:961px){
+        .ohfood-cont{
+            display:flex;
+            justify-content:center;
+            padding: 0 70px;
+        }
+        .icon-logo{
+            display: flex;
+            justify-content: center;
+        }
+        .paris-cont{
+            display: flex;
+            justify-content: center;
+            background-color: lightgrey ;
+        }
+        
+        .pick{
+            display: inline;
+            margin-left: 0px;
+        }
+        .sect{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #explore-butt{
+            position:absolute;
+            top:60px;
+        }
+        .explore-button-cont{
+            position: relative;
+            display:flex;
+            justify-content: flex-start;
+            align-self:flex-start;
+            margin-left: 40%;
+        }
+        .explore-button{
+            position: absolute;
+            top:60px;
+            left:0px;
+            width:150px;
+        }
+    
+        .button-div{
+            display: flex;
+            justify-content:space-around;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .button-style2{
+            margin-top: 13px;
+        }
+        .button-style1{
+            margin-right: 40px;
+        }
+        .restaurant-cont{
+            display: flex;
+            justify-content:flex-start;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        footer{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        }
+    
+
